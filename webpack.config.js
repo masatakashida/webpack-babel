@@ -5,7 +5,12 @@ module.exports = {
  
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: './src/index.js',
- 
+
+  output: {
+    //
+    path: `${__dirname}/dist`,
+    filename: 'main.js'
+  },
   module: {
     rules: [
       {
@@ -21,11 +26,13 @@ module.exports = {
                 // env を指定することで、ES2017 を ES5 に変換。
                 // {modules: false}にしないと import 文が Babel によって CommonJS に変換され、
                 // webpack の Tree Shaking 機能が使えない
-                ['env', {'modules': false}]
+                ['env', {'modules': false}],
+                'react'
               ]
             }
           }
-        ]
+        ],
+        exclude: /node_modules/,
       }
     ]
   }
