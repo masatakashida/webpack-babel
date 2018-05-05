@@ -8,10 +8,10 @@ class App extends React.Component {
     return (
       <div>
         <h1>Hello React!!!</h1>
-        <SubComponent name="My Counter for Babel" />
+        <SubComponent name="My Counter" />
       </div>
     );
   }
 }
-console.log('ようこそ!!!!!');
+console.log('ようこそ〜');
 ReactDOM.render(<App/>, document.querySelector('#app'));
