@@ -3,5 +3,5 @@
 
 ## ローカルで開く
 ```
-open index
+open index.html
 ```
