@@ -7,8 +7,8 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <h1>Hello React!!!</h1>
-        <SubComponent name="My Counter" />
+        <h1>Webpack×Babel×React</h1>
+        <SubComponent name="Counterを使ったデモです" />
       </div>
     );
   }

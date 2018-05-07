@@ -20,7 +20,7 @@ export class SubComponent extends React.Component {
       <div>
         <h2>{this.props.name}</h2>
         <div>{this.state.count}</div>
-        <button onClick={this.handleClick.bind(this)}>Add + 1</button>
+        <button onClick={this.handleClick.bind(this)}>カウンターが「１」足されるボタン</button>
       </div>
     )
   }
